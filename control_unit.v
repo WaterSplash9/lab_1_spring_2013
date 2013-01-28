@@ -107,7 +107,7 @@ module control_unit(
           // second stage (general for all)
           DECODE: begin
              nextstate = EXECUTION;
-             /* A <= Reg [IR[25:21]] and B <= Reg [IR[25:21]] */
+             /* A <= Reg [IR[25:21]] and B <= Reg [IR[20:16]] */
              
              //alu_out <= PC + (sign-extend(IR[15:0]) << 2)
              alu_op    = 'b00; // add op
